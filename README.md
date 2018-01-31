@@ -41,6 +41,41 @@ We are basing our tutorial from [Daniel Nouri's blog post](https://www.kaggle.co
 
 As we are planning to use TensorFlow for implementing our solution, we will follow this [tutorial by Alex Staravoitau](https://navoshta.com/facial-with-tensorflow/). Alex's tutorial was based on the amazing tutorial by Daniel Nouri.
 
+Dependecies/Libraries used:
+- [nolearn](https://github.com/dnouri/nolearn), a scikit-learn wrapper for Lasagne.
+- Theano
+- scikit-learn
+- TensorFlow
+- matplotlib
+- pandas
+- jupyter
+- numpy
+
+Problems/issues encountered:
+- Theano
+    - Error `ValueError: You are tring to use the old GPU back-end. It was removed from Theano. Use device=cuda* now ...`. Solution on how to [converting to the new gpu back end(gpuarray)](https://github.com/Theano/Theano/wiki/Converting-to-the-new-gpu-back-end%28gpuarray%29).
+        - Either set the environment variable, `THEANO_FLAGS='device=cuda'` or
+        - edit Theano config file, `~/.theanorc`
+        ```bash
+        [global]
+        device = cuda
+        ```
+    - Error `(theano.gpuarray): pygpu was configured but could not be imported or is too old (version 0.7 or higher required)`. To resolve this problem, [install `libgpuarray` Python library](http://deeplearning.net/software/libgpuarray/installation.html).
+        - In the middle of this process, at the step when you install `pygpu` by running this command, you will encounter new error `ModuleNotFoundError: No module named 'Cython'`. Work around this by installing Cython with this command: `pip install Cython`
+        ```bash
+        $ python setup.py build
+        ```
+    - Error `ImportError: libgpuarray.so.3: cannot open shared object file: No such file or directory` when you try to `import pygpu`. GitHub [thread](https://github.com/Theano/libgpuarray/issues/89#issuecomment-144826220) discussing this problem. [How to fix shared object file error](https://codeyarns.com/2014/01/14/how-to-fix-shared-object-file-error/). Append `/usr/local/lib` path to `LD_LIBRARY_PATH` in `.bashrc`
+    ```bash
+    LD_LIBRARY_PATH=/usr/local/lib/:$LD_LIBRARY_PATH
+    ```
+- nolearn, a sckit-learn wrapper for Lasagne
+    - Error `ImportError: cannot import name 'downsample'` when trying to `import lasagne`. This can be solved [this way](https://github.com/Lasagne/Lasagne/issues/867). The [cause](https://github.com/Theano/Theano/issues/4337#issuecomment-332041284) of the problem.
+    ```bash
+    $ pip install --upgrade https://github.com/Lasagne/Lasagne/archive/master.zip
+    
+    ```
+
 ## Solution
 
 TBD
