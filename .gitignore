@@ -102,3 +102,7 @@ ENV/
 
 # IDE and editor artefacts
 .vscode
+
+# Data and model weights files
+notebooks/data/
+notebooks/models/
