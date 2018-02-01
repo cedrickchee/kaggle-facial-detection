@@ -87,4 +87,19 @@ $ pip install -r requirements.txt
 
 ## Solution
 
-TBD
+Jupyter Notebook with Cedric's attempts to tackle the competition is in the [notebooks](notebooks) folder.
+
+1. First model: [a single hidden layer](notebooks/1_single_hidden_layer.ipynb)
+    - A very simple neural network (NN).
+2. Second model: [convolutions](notebooks/2_convolutions.ipynb)
+    - Convolutional neural network (CNN) with data augmentation, learning rate decay and dropout.
+3. Third model: [training specialists](notebooks/3_training_specialists.ipynb)
+    - A pipeline of specialist CNNs with early stopping and supervised pre-training.
+
+## Results
+
+Ranking on Leaderboard among 175 teams.
+
+| Team Member   | Private Score        | Public Score         | Best Model |
+| ------------- | -------------------- | -------------------- | ---------- |
+| Cedric        | 1.96686 (26th place) | 2.15043 (16th place) | #3         |
