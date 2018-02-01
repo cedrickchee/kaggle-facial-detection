@@ -51,7 +51,16 @@ Dependecies/Libraries used:
 - jupyter
 - numpy
 
-Problems/issues encountered:
+#### Installation and Setup
+
+- Step 1 - install all dependencies:
+```bash
+$ git clone https://github.com/cedrickchee/kaggle-facial-detection.git
+$ cd kaggle-facial-detection
+$ pip install -r requirements.txt
+```
+
+##### Problems/issues encountered:
 - Theano
     - Error `ValueError: You are tring to use the old GPU back-end. It was removed from Theano. Use device=cuda* now ...`. Solution on how to [converting to the new gpu back end(gpuarray)](https://github.com/Theano/Theano/wiki/Converting-to-the-new-gpu-back-end%28gpuarray%29).
         - Either set the environment variable, `THEANO_FLAGS='device=cuda'` or
