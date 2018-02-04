@@ -41,7 +41,7 @@ We are basing our tutorial from [Daniel Nouri's blog post](https://www.kaggle.co
 
 As we are planning to use TensorFlow for implementing our solution, we will follow this [tutorial by Alex Staravoitau](https://navoshta.com/facial-with-tensorflow/). Alex's tutorial was based on the amazing tutorial by Daniel Nouri.
 
-Dependecies/Libraries used:
+Dependencies/Libraries used:
 - [nolearn](https://github.com/dnouri/nolearn), a scikit-learn wrapper for Lasagne.
 - Theano
 - scikit-learn
