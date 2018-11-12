@@ -2,11 +2,27 @@
 
 ## Introduction
 
-### Singapore Kaggle Machine Challenge Meetup Group
+### Singapore (SG) Kaggle Machine Challenge (ML) Meetup Group
 
-The [Singapore Kaggle Machine Learning Challenge Meetup group](https://www.meetup.com/Singapore-Kaggle-Machine-Learning-Challenge) organized the [first Kaggle meetup](https://www.meetup.com/Singapore-Kaggle-Machine-Learning-Challenge/events/245657152/) in Singapore on Jan 9 2018.
+The [Singapore Kaggle Machine Learning Challenge Meetup group](https://www.sginnovate.com/events/kaggle-machine-learning-meetup-0) organized the [first Kaggle meetup](https://www.meetup.com/Singapore-Kaggle-Machine-Learning-Challenge/events/245657152/) in Singapore on Jan 9 2018.
 
 In this meeting, attendees formed teams with like-minded data scientists on Kaggle challenges of interest. In the following six weeks, the team will discuss the challenge, form a strategy and implement it. The outcome would then be presented to the audience at the Data Science Evening (our second meeting).
+
+[The first meetup is off to a great start](https://twitter.com/cedric_chee/status/950790721216315392).
+
+Here's some photos from the first event:
+
+&nbsp;         | &nbsp;
+-------------- | ------------------
+![](https://pbs.twimg.com/media/DTHi66xUQAAlDGr.jpg) | ![](https://pbs.twimg.com/media/DTHi-cyV4AAadxa.jpg) |
+![](https://pbs.twimg.com/media/DTHjBeHU0AA6kHC.jpg) | ![](https://pbs.twimg.com/media/DTHjFDDUQAEDq5j.jpg)
+
+**Updates:**
+- 2018-06-26:
+    - SG Kaggle ML Group disbanded.
+- 2018-11-12:
+    - Fix broken link to the group's Meetup.com page.
+    - Add photos from the first event.
 
 ### Our Team
 
@@ -82,7 +98,7 @@ $ pip install -r requirements.txt
     - Error `ImportError: cannot import name 'downsample'` when trying to `import lasagne`. This can be solved [this way](https://github.com/Lasagne/Lasagne/issues/867). The [cause](https://github.com/Theano/Theano/issues/4337#issuecomment-332041284) of the problem.
     ```bash
     $ pip install --upgrade https://github.com/Lasagne/Lasagne/archive/master.zip
-    
+
     ```
 
 ## Solution
