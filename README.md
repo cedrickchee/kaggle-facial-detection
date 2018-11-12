@@ -2,9 +2,9 @@
 
 ## Introduction
 
-### Singapore (SG) Kaggle Machine Challenge (ML) Meetup Group
+### Singapore Kaggle Machine Learning Challenge Meetup Group
 
-The [Singapore Kaggle Machine Learning Challenge Meetup group](https://www.sginnovate.com/events/kaggle-machine-learning-meetup-0) organized the [first Kaggle meetup](https://www.meetup.com/Singapore-Kaggle-Machine-Learning-Challenge/events/245657152/) in Singapore on Jan 9 2018.
+The [Singapore (SG) Kaggle Machine Learning (ML) Challenge Meetup group](https://www.sginnovate.com/events/kaggle-machine-learning-meetup-0) organized the [first Kaggle meetup](https://www.meetup.com/Singapore-Kaggle-Machine-Learning-Challenge/events/245657152/) in Singapore on Jan 9 2018.
 
 In this meeting, attendees formed teams with like-minded data scientists on Kaggle challenges of interest. In the following six weeks, the team will discuss the challenge, form a strategy and implement it. The outcome would then be presented to the audience at the Data Science Evening (our second meeting).
 
@@ -111,6 +111,8 @@ Jupyter Notebook with Cedric's attempts to tackle the competition is in the [not
     - Convolutional neural network (CNN) with data augmentation, learning rate decay and dropout.
 3. Third model: [training specialists](notebooks/3_training_specialists.ipynb)
     - A pipeline of specialist CNNs with early stopping and supervised pre-training.
+4. Fourth model:
+    - ResNet-50 architecture and large scale training with methods from cutting-edge research such as [1cycle policy](https://sgugger.github.io/the-1cycle-policy.html), super convergence, weight decay, batch normalization, dropout and data transformation.
 
 ## Results
 
@@ -119,3 +121,5 @@ Ranking on Leaderboard among 175 teams.
 | Team Member   | Private Score        | Public Score         | Best Model |
 | ------------- | -------------------- | -------------------- | ---------- |
 | Cedric        | 1.96686 (26th place) | 2.15043 (16th place) | #3         |
+
+We think that there is a lot of room for improving our leaderboard score as we are still trying out new ideas and developing new techniques from it for our fourth and final model.
